@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  hsl(211, 68%, 94%);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.all-content{
+    width: 60%;
+    margin: 40px 20% 40px 20%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    height: max-content;
+    padding: 20px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.7rem ;
+    height: auto;
+    
+    
+    .div1{
+    display: flex;
+    align-items: center;
+    }
+    .h1{
+        font-weight: 500;
+        font-size: 26px;
+    }
+    .span,.num{
+        background-color: hsl(219, 85%, 26%);
+        border-radius: 5px;
+        color: white;
+        width: 15px;
+        text-align: center;
+        font-size: larger;
+        display: inline;
+        margin-left: 5px;
+        /* padding: auto; */
+
+    }
+    button{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        color: hsl(219, 12%, 42%);
+    }
+    button:hover{
+        color: hsl(219, 85%, 26%);
+    }
+}
+.all-notification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.notification{
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: max-content;
+    background-color: rgb(238, 253, 253);
+    height: 60px;
+    padding: 0.5rem;
+    margin-bottom: 0.4rem;
+    /* padding-top: -20px; */
+    height: auto;
+    img{
+        width: 40px;
+    }
+    .content{
+        margin-left: 1rem;
+        overflow: hidden;
+        p{
+            color: hsl(219, 12%, 42%);
+            .dot{
+                color: red;
+                /* display: none; */
+        }
+    }
+}
+}
+.msg{
+    border: 1px solid  hsl(220, 11%, 89%);
+    margin: 0.5rem;
+    padding: 5px;
+}
+.msg:hover{
+    background-color:  rgb(238, 253, 253);
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: unset;
+}
+a:hover{
+    color:  hsl(219, 85%, 26%);
+}
+.a1{
+    color: rgb(70, 68, 68);
+}
+
+@media screen and (max-width: 600px){
+    .all-content{
+        width: calc(100% - 2rem);
+        padding: 0;
+        margin: 1rem 1rem 1rem;
+    }
+}
